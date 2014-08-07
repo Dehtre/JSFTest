@@ -2,6 +2,7 @@ import javax.faces.bean.ManagedBean;
 
 /**
  * Created by Michał on 2014-08-07.
+ * 
  */
 
 @ManagedBean
