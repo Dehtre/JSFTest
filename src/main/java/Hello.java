@@ -1,12 +1,16 @@
-import javax.faces.bean.ManagedBean;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
+
+import java.io.Serializable;
 
 /**
  * Created by Michał on 2014-08-07.
  *
  */
 
-@ManagedBean
-public class Hello {
+@Named("hello")
+@SessionScoped
+public class Hello implements Serializable{
     final String hw = "Hello world!";
     private String name, something;
 
