@@ -12,7 +12,7 @@ import java.io.Serializable;
 @SessionScoped
 public class Hello implements Serializable{
     final String hw = "Hello world!";
-    private String name, something;
+    private String name = "", something = "";
     private Boolean postclick = false;
 
     public String getHw() {
