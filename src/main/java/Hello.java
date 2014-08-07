@@ -13,6 +13,7 @@ import java.io.Serializable;
 public class Hello implements Serializable{
     final String hw = "Hello world!";
     private String name, something;
+    private Boolean postclick = false;
 
     public String getHw() {
         return hw;
@@ -34,7 +35,25 @@ public class Hello implements Serializable{
         this.something = something;
     }
 
+    public Boolean getPostclick() {
+        return postclick;
+    }
+
+    public void setPostclick(Boolean postclick) {
+        this.postclick = postclick;
+    }
+
+    public String getResultString() {
+        return name + " wrote " + something;
+    }
+
     public String process() {
         return "result";
+    }
+
+    public void reset() {
+        name = "";
+        something = "";
+        postclick = false;
     }
 }
