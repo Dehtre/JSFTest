@@ -44,6 +44,8 @@ public class Hello implements Serializable{
     }
 
     public String getResultString() {
+        if(name.equals("") || something.equals(""))
+            return "Nothing to show, one or more fields empty.";
         return name + " wrote " + something;
     }
 
